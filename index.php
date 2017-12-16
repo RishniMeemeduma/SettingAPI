@@ -152,7 +152,10 @@ function tp_options_page(  ) {
 	?>
 			<!--adding tabs-->
 
-<div class="wrap"><div id="icon-themes" class="icon32"></div><h1>Setting Page</h1>
+<div class="wrap">
+	<div id="icon-themes" class="icon32"></div>
+	<?php settings_errors();?>
+	<h1>Setting Page</h1>
 <?php
 	$active_tab='header-option';
 	if(isset($_GET['tab'])){
